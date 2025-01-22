@@ -1,11 +1,15 @@
 spring:
   application:
     name: book-service
-  cloud:
     config:
-      discovery:
-        enabled: true
-        service-id: config-server
+      import: "optional:configserver:"
+      profiles:
+        acrive: native
+      data:
+        mongodb:
+          database: admin
+          username: admin
+          password: admin
 
 server:
   port: 8081
