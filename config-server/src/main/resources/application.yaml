@@ -16,6 +16,7 @@ spring:
           uri: https://github.com/daniloginov/ms-config-properties
           search-paths:
             - "/{application}/{profile}"
+          default-label: main
 
 eureka:
   client:
