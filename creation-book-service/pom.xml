@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.10.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from com.example.repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>creation-book-service</artifactId>
+	<artifactId>creation-book-com.example.service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>creation-book-service</name>
+	<name>creation-book-com.example.service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>

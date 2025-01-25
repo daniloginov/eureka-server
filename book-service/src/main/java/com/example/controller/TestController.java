@@ -1,4 +1,4 @@
-package controller;
+package com.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -47,7 +47,7 @@ public class TestController {
         List<ServiceInstance> instances = this.discoveryClient.getInstances(serviceId);
 
         if (instances == null || instances.isEmpty()) {
-            return "No instances for service: " + serviceId;
+            return "No instances for com.example.service: " + serviceId;
         }
 
         StringBuilder result = new StringBuilder("Instances for Service: " + serviceId + "<br>");

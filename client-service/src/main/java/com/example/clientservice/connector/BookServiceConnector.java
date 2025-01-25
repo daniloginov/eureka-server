@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @FeignClient(
-        name = "book-service",
+        name = "book-com.example.service",
         url = "${book-service.url}",
         configuration = FeignConfig.class
 )

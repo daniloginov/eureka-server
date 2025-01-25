@@ -1,9 +1,10 @@
 package util;
 
-import repository.BooksRepository;
-import model.Book;
+import com.example.repository.BooksRepository;
+import com.example.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 public class ApplicationRunner implements CommandLineRunner {
     @Autowired

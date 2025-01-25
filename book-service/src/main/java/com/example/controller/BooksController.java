@@ -1,7 +1,7 @@
-package controller;
+package com.example.controller;
 
-import model.Book;
-import service.BooksService;
+import com.example.model.Book;
+import com.example.service.BooksService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,13 +30,13 @@ public class BooksController {
 
     @GetMapping(path = "/show")
     public List<Book> getAllBooksList() {
-        logger.info("Get data from database (Feign Client on client-service side)");
+        logger.info("Get data from database (Feign Client on client-com.example.service side)");
         return booksService.findAllBooks();
     }
 
     @GetMapping("/data")
     public List<Book> data() {
-        logger.info("Get data from database (RestTemplate on client-service side)");
+        logger.info("Get data from database (RestTemplate on client-com.example.service side)");
         return booksService.findAllBooks();
     }
 }
